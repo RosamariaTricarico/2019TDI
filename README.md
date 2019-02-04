@@ -29,7 +29,7 @@ $ Gene     : Factor w/ 25193 levels "41699","41700",..: 24220 24194 7770 23654 3
 Rows correspond to genes   
 Columns correspond to patients  
    
-"Gene" indicates the gene code listed in the fist column  
+"Gene" indicates the gene code/name listed in the fist column  
    
 *Abbreviations:*    
 B = baseline     
