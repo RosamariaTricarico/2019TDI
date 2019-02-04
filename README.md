@@ -6,6 +6,6 @@
 A brief overview of my biomedical engineering project submitted to the 2019 TDI Fellowship challenge.
 
 
-*Full data-sets, R.scripts, and results of the project are included in this repository.
+*Full data-sets, R.scripts, and results of the project are included in this repository.*
 
 
