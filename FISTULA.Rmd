@@ -30,7 +30,7 @@ The [Division of Vascular Surgery at the University of Florida Shands Hospital](
 
 The data-sets are composed by:
 
-1. **Gene expression of monocytes and neutrophils on 50 patients (genes number = 26,831) at two time points (baseline, 2 weeks).**  
+1. **Gene expression of monocytes and neutrophils (53,662 total) on 50 patients at two time points (baseline, 2 weeks).**  
 Scientific reasoning: circulating leukocytes (such as monocytes and neutrophils) play a role in development of intimal hyperplasia. Monocytes and neutrophils both exhibit phenotype plasticity that is associated with either pro-inflammatory or non-inflammatory states. Dynamic gene expression would give insight into their role during arteriovenous fistula adaption; unique responses might occur between fistulas that successfully mature and those that don’t.  
 RNA was isolated and expression levels were determined using microarrays. 
 
