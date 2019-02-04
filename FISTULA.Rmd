@@ -50,7 +50,7 @@ Dilation is measured with ultrasound imaging.
 
 We will first have an overview of the full anatomic-hemodyamic and genomic data-sets to undestand their major characteristics and distributions.
 
-**(*1. GENOMICS*)**
+***1. GENOMICS***
 
 *MONOCYTES*:
 I extracted the average fold change of gene expression from baseline, for monocytes. Data sample of the fist five genes is displayed below. 
