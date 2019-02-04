@@ -1,5 +1,5 @@
 ---
-title: "*A MULTISCALE ANALYSES ON ARTERIOVENOUS FISTULA MATURATION*"
+title: "*MULTISCALE ANALYSES ON ARTERIOVENOUS FISTULA MATURATION*"
 author: "Rosamaria Tricarico"
 date: "February 1, 2018"
 output: html_notebook
