@@ -26,11 +26,13 @@ $ Gene     : Factor w/ 25193 levels "41699","41700",..: 24220 24194 7770 23654 3
  $ X31059.B : num  5.26 5.93 6.45 6.15 5.56 ...  
 [...]    
   
-Rows correspond to genes   
-Columns correspond to patients  
-   
-"Gene" indicates the gene code/name listed in the fist column  
-   
+- The codes listed in the fist column "Gene" indicate the gene code/name   
+- The number that follows the "X" in "X31043.B" indicates the patient number (= 31043), following the dot is time of data acquisition (B = baseline, 2W = 2 weeks)      
+  
+*CAUTION: This is a double entry table:*  
+*Each row corresponds to a different gene*  
+*Each column corresponds to a patient's data recording (there are two data recording times for each patient: baseline and 2 weeks)* 
+
 *Abbreviations:*    
 B = baseline     
 2W = 2 weeks    
@@ -48,7 +50,7 @@ B = baseline
  $ WSSGave: num  637 510 346 296 277 ...  
  $ OSI    : num  0.01 0 0 0 0 0 0 0 0 0 ...  
 
-"Patient" indicates the patient code
+"Patient" indicates the patient number
 "Site" indicates the location of the screening hospital   
 "Scan" indicates the time of CT scan imaging (Scan == 1 #Baseline, Scan == 2 #6 weeks, Scan == 3 #6 months)     
 "d mm" is distance in millimiters    
@@ -67,7 +69,7 @@ G = gradient
 *"Neutrophil_FMD_NMD data.xlsx", "Monocyte_FMD_NMD data.xlsx"*  
 
 "original order" indicates the series number  
-"PID" indicates the patient ID   
+"PID" indicates the patient ID number  
 "FMD_BRACH_PRE" or "NMD_BRACH_PRE" indicates the FMD/NMD pre-fistula  
 "FMD_BRACH_POST" or "NMD_BRACH_POST" indicates the FMD/NMD post-fistula  
 "fmd_brach_per" indicates the percent difference between pre- and post- dilation measurements as [(PRE - POST)/PRE]*100  
