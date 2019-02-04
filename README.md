@@ -6,9 +6,11 @@
 A brief overview of my biomedical engineering project submitted to the 2019 TDI Fellowship challenge.   
 
 
-*Full data-sets, R.scripts, and R Notebooks of the project are included in this repository.* 
-
-
+***Full data-sets, R.scripts, and R Notebooks of the project are included in this repository.***   
+   
+   
+   
+      
 **DATA-SETS DESCRIPTION & NOTES**       
   
 **HEMODYNAMIC DATA-SET**     
