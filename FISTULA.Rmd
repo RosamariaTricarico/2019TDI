@@ -30,7 +30,7 @@ The [Division of Vascular Surgery at the University of Florida Shands Hospital](
 
 The data-sets are composed by:
 
-1. **Gene expresion of monocytes and neutrophils on 50 patients (genes number = 26,831) at two time points (baseline, 2 weeks).**  
+1. **Gene expression of monocytes and neutrophils on 50 patients (genes number = 26,831) at two time points (baseline, 2 weeks).**  
 Scientific reasoning: circulating leukocytes (such as monocytes and neutrophils) play a role in development of intimal hyperplasia. Monocytes and neutrophils both exhibit phenotype plasticity that is associated with either pro-inflammatory or non-inflammatory states. Dynamic gene expression would give insight into their role during arteriovenous fistula adaption; unique responses might occur between fistulas that successfully mature and those that don’t.  
 RNA was isolated and expression levels were determined using microarrays. 
 
@@ -39,7 +39,7 @@ RNA was isolated and expression levels were determined using microarrays.
 Scientific reasoning: fistula maturation consists of vessel adaptation to larger blood flow. For instance, the venous and arterial diameter increase and the vessel undergo structural change to withstand higher blood flow. If vascular adaptation mechanism fails, larger wall-shear stresses (WSS), wall-shear stress gradients (WSSG), and oscillatory shear index (OSI) can be observed. 
 Anatomic data was extracted from ultrasound imaging; hemodynamic data was extracted from patient-specific computational fluid-dynamic analyses.
 
-3. **Brachial artery dilation on 50 patients at two time poins (pre- and post-fistula).**  
+3. **Brachial artery dilation on 50 patients at two time points (pre- and post-fistula).**  
 Scientific reasoning: Also endothelial and smooth muscle cells play a role in vessel wall adaption to stimuli. Flow-mediated and nitroglycerin-mediated dilation (FMD and NMD, respectively) are utilized for non-invasive assessment of endothelium-dependent and endothelium-independent (smooth muscle cell) vessel functions. 
 Dilation is measured with ultrasound imaging.
 *The results related to this data-set are not be presented in this notebook.*
@@ -346,4 +346,5 @@ write.csv(Significant, file = "Patient31143_Significant_Neutrophils.csv")
 
 ***
 
-**Full data-sets can be found [here](https://github.com/RosamariaTricarico/2019TDI/tree/master/DATA.SETS).**   **Main R scripts can be found [here](https://github.com/RosamariaTricarico/2019TDI/tree/master/R.SCRIPTS).**
+**Full data-sets can be found [here](https://github.com/RosamariaTricarico/2019TDI/tree/master/DATA.SETS).**  
+**Main R scripts can be found [here](https://github.com/RosamariaTricarico/2019TDI/tree/master/R.SCRIPTS).**
