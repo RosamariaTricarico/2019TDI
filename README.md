@@ -1,7 +1,7 @@
 # 2019TDI
 
 ***
-[MULTISCALE ANALYSES ON ARTERIOVENOUS FISTULA MATURATION](https://rosamariatricarico.github.io/2019TDI/FISTULA.nb.html)
+Project notebook: [MULTISCALE ANALYSES ON ARTERIOVENOUS FISTULA MATURATION](https://rosamariatricarico.github.io/2019TDI/FISTULA.nb.html)
 ***
 A brief overview of my biomedical engineering project submitted to the 2019 TDI Fellowship challenge.   
 
