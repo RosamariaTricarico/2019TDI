@@ -20,7 +20,7 @@ These results can play a fundamental role in the understating of fistula maturat
 
 Over 650,000 Americans are affected by [end stage renal disease](https://www.niddk.nih.gov/health-information/health-statistics/kidney-disease), which requires [hemodialysis treatment](https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/hemodialysis) until availability for kidney transplant. 
 [Arteriovenous fistula](https://surgery.ucsf.edu/conditions--procedures/vascular-access-for-hemodialysis.aspx), a surgical connection between artery and vein of the arm, is recognized as the best hemodialysis access, as it has been reported to have lower thrombosis and infection rates compared to other fistulas. 
-However, obtaining clinically mature fistula is challenging and the causes of fistula maturation failures are unknown. [Increasing research investigations](https://pubs.rsna.org/doi/pdf/10.1148/radiol.2015150385) are being performed to gain an insight into the mechanisms of maturation failure, from vascular anatomy and hemodynamics, to cell dysfunction and genomics that might play a role in vascular maturation.
+However, obtaining clinically mature fistula is challenging and the causes of fistula maturation failures are unknown. [Research investigations](https://pubs.rsna.org/doi/pdf/10.1148/radiol.2015150385) are being performed to gain an insight into the mechanisms of maturation failure, from vascular anatomy and hemodynamics, to cell dysfunction and genomics that might play a role in vascular maturation, yet among the major limitations are small data-sets and lack of interconnection among events at micro- and macro-scales.
 
 The [Division of Vascular Surgery at the University of Florida Shands Hospital](https://vascular.surgery.med.ufl.edu/research/national-institutes-of-health-study-of-av-fistulas/) has dedicated over 8 years on multiscale analyses on arteriovenous fistula maturation placing itself among the top six internationally recognized centers specialized on the topic. This vaste research has generated large patient-specific data-sets, now available for data science exploration.
 
@@ -31,7 +31,7 @@ The [Division of Vascular Surgery at the University of Florida Shands Hospital](
 The data-sets are composed by:
 
 1. **Gene expresion of monocytes and neutrophils on 50 patients (genes number = 26,831) at two time points (baseline, 2 weeks).**  
-Scientific reasoning: Monocytes and neutrophils both exhibit phenotype plasticity that is associated with either pro-inflammatory or non-inflammatory states. Dynamic gene expression would give insight into their role during arteriovenous fistula adaption: unique responses might occur between fistulas that successfully mature and those that don’t.
+Scientific reasoning: circulating leukocytes (such as monocytes and neutrophils) play a role in development of intimal hyperplasia. Monocytes and neutrophils both exhibit phenotype plasticity that is associated with either pro-inflammatory or non-inflammatory states. Dynamic gene expression would give insight into their role during arteriovenous fistula adaption; unique responses might occur between fistulas that successfully mature and those that don’t.  
 RNA was isolated and expression levels were determined using microarrays. 
 
 
@@ -40,7 +40,7 @@ Scientific reasoning: fistula maturation consists of vessel adaptation to larger
 Anatomic data was extracted from ultrasound imaging; hemodynamic data was extracted from patient-specific computational fluid-dynamic analyses.
 
 3. **Brachial artery dilation on 50 patients at two time poins (pre- and post-fistula).**  
-Scientific reasoning: Flow-mediated and nitroglycerin-mediated dilation (FMD and NMD, respectively) are utilized for non-invasive assessment of endothelium-dependent and endothelium-independent (smooth muscle cell) vessel functions. 
+Scientific reasoning: Also endothelial and smooth muscle cells play a role in vessel wall adaption to stimuli. Flow-mediated and nitroglycerin-mediated dilation (FMD and NMD, respectively) are utilized for non-invasive assessment of endothelium-dependent and endothelium-independent (smooth muscle cell) vessel functions. 
 Dilation is measured with ultrasound imaging.
 *The results related to this data-set are not be presented in this notebook.*
 
@@ -140,7 +140,7 @@ write.csv(Significant, file = "Significant_Neutrophils.csv")
 
 Let's move to the anatomic-hemodynamic data-set.
 
-**(*2. VESSELS' MORPHOLOGY AND HEMODYNAMICS*)**
+***2. VESSELS' MORPHOLOGY AND HEMODYNAMICS***
 
 *VEIN*:
 the full anatomic and hemodynamic data-set of the *venous* portion of the fistula is displayed below.
@@ -212,7 +212,7 @@ As the *vein anatomy and hemodynamics* undergo to the largest changes, most visi
 *By investigating the anatomy and hemodynamics on a patient-specific basis and compare it with the patient-specific genomic results, we can obtain a list of genes that are potentially involved with fistula remodelling and/or maturation failure mechanics.  *
 *Aim: identify whether unique responses occur for fistulas that successfully mature and those that don’t.*
 
-**(*3. PATIENT 1 - MORPHOLOGY AND HEMODYNAMICS*)**
+***3. PATIENT 1 - MORPHOLOGY AND HEMODYNAMICS***
 
 Fold changes from baseline are displayed below for the five parameters of interest at 6 weeks and 6 months post-intervention.
 ```{r echo=FALSE}
@@ -266,7 +266,7 @@ However, some other portions of the vein present close to no area increase. At t
 
 For this reason, next we analyze the genomic of this patient to identify genes that might be involved in fistula maturation failure.
 
-**(*4. PATIENT 1 - GENOMICS*)**
+***4. PATIENT 1 - GENOMICS***
 
 *MONOCYTES*: 
 the Volcano plot is displayed below and the genes with p-value > .01 and fold change > 1.3 are marked in blue to identify set of genes that might play a role during fistula failure.

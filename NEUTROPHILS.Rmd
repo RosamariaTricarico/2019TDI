@@ -18,7 +18,9 @@ output: html_notebook
 
 **Time points:** 2 weeks post-fistula
 
-**Description:** The number of genes with larger expression variation is equal to 42; the list of genes is saved in the array "Significant".  
+**Description:** The number of genes with larger expression variation is equal to 42; the list of genes is attached below.  
+
+**Goal:** to identify the list of genes potentially involved in fistula adaptmation and/or failure mechanisms.
 
 ***
 
