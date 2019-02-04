@@ -15,7 +15,7 @@ A brief overview of a biomedical engineering project submitted to the 2019 TDI F
       
 **DATA-SETS DESCRIPTION & NOTES**       
   
-**GENOMIC DATA-SET**  
+**GENOMIC DATA-SETS**  
 *"Neutrophil.csv", "Monocyte.csv"*  
 'data.frame':	26831 obs. of  100-150 variables:  
 $ Gene     : Factor w/ 25193 levels "41699","41700",..: 24220 24194 7770 23654 3747 12443 13803 14186 24219 21453 ...  
