@@ -33,4 +33,5 @@ with(subset(Table, pvalue<.01 & abs(log2FoldChange)>a), points(log2FoldChange, -
 abline(v=c(+a,-a), col=c("black", "black"), lty=c(2,2), lwd=c(1, 1));
 abline(h=2, col=c("black", "black"), lty=c(2,2), lwd=c(1, 1))
 Significant <- subset(Table, pvalue<.01 & abs(log2FoldChange)>a)
+write.csv(Significant, file = "Significant_Neutrophils.csv")
 ```
