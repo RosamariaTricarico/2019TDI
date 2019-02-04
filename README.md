@@ -16,7 +16,7 @@ A brief overview of a biomedical engineering project submitted to the 2019 TDI F
 **DATA-SETS DESCRIPTION & NOTES**       
   
 **GENOMIC DATA-SETS**  
-*"Neutrophil.csv", "Monocyte.csv"*  
+*"Neutrophil.csv", "Monocyte_smaller.csv"*  
 'data.frame':	26831 obs. of  100-150 variables:  
 $ Gene     : Factor w/ 25193 levels "41699","41700",..: 24220 24194 7770 23654 3747 12443 13803 14186 24219 21453 ...  
  $ X31043.B : num  5.08 5.74 6.42 6.69 5.75 ...  
@@ -66,13 +66,16 @@ G = gradient
   
   
 **BRACHIAL ARTERY DILATION  DATA-SETS**  
-*"Neutrophil_FMD_NMD data.xlsx", "Monocyte_FMD_NMD data.xlsx"*  
+*"FMD_NMD data_N1.xlsx", "FMD_NMD data_M2.xlsx"*  
 
-"original order" indicates the series number  
+Data were collected in two separate files.  
+Each xlsx file contains two excel sheets (FMD and NMD).   
+Each sheet is composed by 75-100 rows, one for each patient, and 4 culomns, one for each of the following parameters:  
+ 
 "PID" indicates the patient ID number  
 "FMD_BRACH_PRE" or "NMD_BRACH_PRE" indicates the FMD/NMD pre-fistula  
 "FMD_BRACH_POST" or "NMD_BRACH_POST" indicates the FMD/NMD post-fistula  
-"fmd_brach_per" indicates the percent difference between pre- and post- dilation measurements as [(PRE - POST)/PRE]*100  
+"fmd_brach_per" indicates the percent difference between pre- and post- dilation measurements as [(PRE - POST)/PRE]*100   
 
 *Abbreviations:*  
 FMD = flow-mediated dilation   
