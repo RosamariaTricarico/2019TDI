@@ -7,7 +7,7 @@ output: html_notebook
 
 ***
 
-PROJECT OUTLINE
+**PROJECT OUTLINE**
 
 Arteriovenous fistula for hemodialysis access fails to clinically mature in [28-53%](https://cjasn.asnjournals.org/content/clinjasn/1/2/332.full.pdf) of the cases.
 
@@ -16,7 +16,7 @@ These results can play a fundamental role in the understating of fistula maturat
 
 ***
 
-BACKGROUND
+**BACKGROUND**
 
 Over 650,000 Americans are affected by [end stage renal disease](https://www.niddk.nih.gov/health-information/health-statistics/kidney-disease), which requires [hemodialysis treatment](https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/hemodialysis) until availability for kidney transplant. 
 [Arteriovenous fistula](https://surgery.ucsf.edu/conditions--procedures/vascular-access-for-hemodialysis.aspx), a surgical connection between artery and vein of the arm, is recognized as the best hemodialysis access, as it has been reported to have lower thrombosis and infection rates compared to other fistulas. 
@@ -26,31 +26,31 @@ The [Division of Vascular Surgery at the University of Florida Shands Hospital](
 
 ***
 
-DATA-SETS
+**DATA-SETS**
 
 The data-sets are composed by:
 
-1. Gene expresion of monocytes and neutrophils on 50 patients (genes number = 26,831) at two time points (baseline, 2 weeks)
+1. **Gene expresion of monocytes and neutrophils on 50 patients (genes number = 26,831) at two time points (baseline, 2 weeks).**  
 Scientific reasoning: Monocytes and neutrophils both exhibit phenotype plasticity that is associated with either pro-inflammatory or non-inflammatory states. Dynamic gene expression would give insight into their role during arteriovenous fistula adaption: unique responses might occur between fistulas that successfully mature and those that don’t.
 RNA was isolated and expression levels were determined using microarrays. 
 
 
-2. Anatomic and hemodynamic data along the fistula length of 50 patients at 3 time points (baseline, 6 weeks, 6 months)
+2. **Anatomic and hemodynamic data along the fistula length of 50 patients at 3 time points (baseline, 6 weeks, 6 months).**  
 Scientific reasoning: fistula maturation consists of vessel adaptation to larger blood flow. For instance, the venous and arterial diameter increase and the vessel undergo structural change to withstand higher blood flow. If vascular adaptation mechanism fails, larger wall-shear stresses (WSS), wall-shear stress gradients (WSSG), and oscillatory shear index (OSI) can be observed. 
 Anatomic data was extracted from ultrasound imaging; hemodynamic data was extracted from patient-specific computational fluid-dynamic analyses.
 
-3. Brachial artery dilation on 50 patients at two time poins (pre- and post-fistula)
+3. **Brachial artery dilation on 50 patients at two time poins (pre- and post-fistula).**  
 Scientific reasoning: Flow-mediated and nitroglycerin-mediated dilation (FMD and NMD, respectively) are utilized for non-invasive assessment of endothelium-dependent and endothelium-independent (smooth muscle cell) vessel functions. 
 Dilation is measured with ultrasound imaging.
-The results related to this data-set are not be presented in this notebook. 
+*The results related to this data-set are not be presented in this notebook.*
 
 ***
 
-EXPLORATORY ANALYSES
+**EXPLORATORY ANALYSES**
 
 We will first have an overview of the full anatomic-hemodyamic and genomic data-sets to undestand their major characteristics and distributions.
 
-1. GENOMICS
+**(*1. GENOMICS*)**
 
 *MONOCYTES*:
 I extracted the average fold change of gene expression from baseline, for monocytes. Data sample of the fist five genes is displayed below. 
@@ -140,7 +140,7 @@ write.csv(Significant, file = "Significant_Neutrophils.csv")
 
 Let's move to the anatomic-hemodynamic data-set.
 
-2. VESSELS' MORPHOLOGY AND HEMODYNAMICS
+**(*2. VESSELS' MORPHOLOGY AND HEMODYNAMICS*)**
 
 *VEIN*:
 the full anatomic and hemodynamic data-set of the *venous* portion of the fistula is displayed below.
@@ -208,9 +208,11 @@ xyplot(OSI ~ d.mm | Scan, data = Hemodynamics, groups = Patient, type = "l", lwd
 
 As the *vein anatomy and hemodynamics* undergo to the largest changes, most visible from the area graphs, for the purposes of this brief presentation, from now on we will focus *vein* investigation.
 
-*Moving to the next phase of the epxloratory analysis, we will dive in our data-sets in more depth. By investigating the anatomy and hemodynamics on a patient-specific basis and compare it with the patient-specific genomic results, we can obtain a list of genes that are potentially involved with fistula remodelling and/or maturation failure mechanics. Aim: identify whether unique responses occur for fistulas that successfully mature and those that don’t.*
+*Moving to the next phase of the epxloratory analysis, we will dive in our data-sets in more depth.  *
+*By investigating the anatomy and hemodynamics on a patient-specific basis and compare it with the patient-specific genomic results, we can obtain a list of genes that are potentially involved with fistula remodelling and/or maturation failure mechanics.  *
+*Aim: identify whether unique responses occur for fistulas that successfully mature and those that don’t.*
 
-3. PATIENT 1 - MORPHOLOGY AND HEMODYNAMICS
+**(*3. PATIENT 1 - MORPHOLOGY AND HEMODYNAMICS*)**
 
 Fold changes from baseline are displayed below for the five parameters of interest at 6 weeks and 6 months post-intervention.
 ```{r echo=FALSE}
@@ -259,12 +261,12 @@ xyplot(area + WSSave + WSSmax + WSSGave + OSI ~ d.mm, data = Patient1_FoldChange
                 columns=2, cex=0.7,
                 lines=TRUE))
 ```
-This figure shows that along some portions of the vein the cross-sectional area increased up to 2.5 fold at six months, suggesting vessel adaptation and remodeling. 
+This figure shows that along some portions of the vein the cross-sectional area increased up to 2.5 fold at six months, suggesting vessel adaptation and remodeling.   
 However, some other portions of the vein present close to no area increase. At these locations, hemodynamic parameters such as maximum (and average) WSS as well as average WSS gradient reach the highest values, underlying risk of platelets activation and thrombus formation. 
 
 For this reason, next we analyze the genomic of this patient to identify genes that might be involved in fistula maturation failure.
 
-4. PATIENT 1 - GENOMICS
+**(*4. PATIENT 1 - GENOMICS*)**
 
 *MONOCYTES*: 
 the Volcano plot is displayed below and the genes with p-value > .01 and fold change > 1.3 are marked in blue to identify set of genes that might play a role during fistula failure.
@@ -344,6 +346,4 @@ write.csv(Significant, file = "Patient31143_Significant_Neutrophils.csv")
 
 ***
 
-Full data-sets can be found [here](https://github.com/RosamariaTricarico/2019TDI/tree/master/DATA.SETS).
-
-Main R scripts can be found [here](https://github.com/RosamariaTricarico/2019TDI/tree/master/R.SCRIPTS).
+**Full data-sets can be found [here](https://github.com/RosamariaTricarico/2019TDI/tree/master/DATA.SETS).**   **Main R scripts can be found [here](https://github.com/RosamariaTricarico/2019TDI/tree/master/R.SCRIPTS).**
