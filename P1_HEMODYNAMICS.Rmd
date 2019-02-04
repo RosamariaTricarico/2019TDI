@@ -24,7 +24,9 @@ output: html_notebook
 *Time points:* 6 weeks, 6 months
 
 *Description:* The figure shows that along some portions of the vein (30-40 mm) the cross-sectional area increases up to 2.5 fold at six months, suggesting vessel adaptation and remodeling.   
-However, some other portions of the vein (10-20 mm) present near-to-zero area increase. At these locations, hemodynamic parameters such as maximum (and average) WSS as well as average WSS gradient reach the highest values, underlying risk of platelets activation and thrombus formation. 
+However, some other portions of the vein (10-20 mm) present near-to-zero area increase. At these locations, hemodynamic parameters such as maximum (and average) WSS as well as average WSS gradient reach the highest values, underlying risk of platelets activation and thrombus formation.   
+
+*Aim:* By running this script on the 50-patient data-set, the fistulas at risk of failure can be identified.
 
 ***
 
