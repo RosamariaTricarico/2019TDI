@@ -61,15 +61,15 @@ Ave = average
 G = gradient    
   
   
-**BRACHIAL ARTERY DILATION  DATA-SETS**
-*"Neutrophil_FMD_NMD data.xlsx", "Monocyte_FMD_NMD data.xlsx"*
+**BRACHIAL ARTERY DILATION  DATA-SETS**  
+*"Neutrophil_FMD_NMD data.xlsx", "Monocyte_FMD_NMD data.xlsx"*  
 
-"original order" indicates the series number
-"PID" indicates the patient ID
-"FMD_BRACH_PRE" or "NMD_BRACH_PRE" indicates the FMD/NMD pre-fistula
-"FMD_BRACH_POST" or "NMD_BRACH_POST" indicates the FMD/NMD post-fistula
-"fmd_brach_per" indicates the percent difference between pre- and post- dilation measurements as [(PRE - POST)/PRE]*100
+"original order" indicates the series number  
+"PID" indicates the patient ID   
+"FMD_BRACH_PRE" or "NMD_BRACH_PRE" indicates the FMD/NMD pre-fistula  
+"FMD_BRACH_POST" or "NMD_BRACH_POST" indicates the FMD/NMD post-fistula  
+"fmd_brach_per" indicates the percent difference between pre- and post- dilation measurements as [(PRE - POST)/PRE]*100  
 
-*Abbreviations:* 
-FMD = flow-mediated dilation  
-NMD = nitroglycerin-mediated dilation
+*Abbreviations:*  
+FMD = flow-mediated dilation   
+NMD = nitroglycerin-mediated dilation   
