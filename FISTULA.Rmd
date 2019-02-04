@@ -1,5 +1,7 @@
 ---
 title: "*A MULTISCALE ANALYSES ON ARTERIOVENOUS FISTULA MATURATION*"
+author: "Rosamaria Tricarico"
+date: "February 1, 2018"
 output: html_notebook
 ---
 
@@ -340,3 +342,6 @@ write.csv(Significant, file = "Patient31143_Significant_Neutrophils.csv")
 
 By investigating the genomics of all patients which fistula already failied or show hemodynamic signatures of failure, we will be able to obtain a list of genes potenitally involved with fistula failure mechanicsms.
 
+
+Full data-sets can be found [here](https://github.com/RosamariaTricarico/2019TDI/tree/master/DATA.SETS).
+Main R scripts can be found [here](https://github.com/RosamariaTricarico/2019TDI/tree/master/R.SCRIPTS).

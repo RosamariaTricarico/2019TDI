@@ -5,10 +5,15 @@ date: "February 1, 2018"
 output: html_notebook
 ---
 
+
+***
+
 Fold changes from baseline are displayed below for the five parameters of interest at 6 weeks and 6 months post-intervention.
 
 The figure shows that along some portions of the vein [30-40 mm] the cross-sectional area increased up to 2.5 fold at six months, suggesting vessel adaptation and remodeling. 
 However, some other portions of the vein [10-20 mm] present close to zero area increase. At these locations, hemodynamic parameters such as maximum (and average) WSS as well as average WSS gradient reach the highest values, underlying risk of platelets activation and thrombus formation. 
+
+***
 
 ```{r echo=FALSE}
 # Read the hemodynamic data set
