@@ -8,10 +8,23 @@ output: html_notebook
 
 ***
 
-Fold changes from baseline are displayed below for the five parameters of interest at 6 weeks and 6 months post-intervention.
+**Patient-specific fold changes from baseline are displayed below for the five parameters of interest at 6 weeks and 6 months post-intervention.**  
 
-The figure shows that along some portions of the vein [30-40 mm] the cross-sectional area increased up to 2.5 fold at six months, suggesting vessel adaptation and remodeling. 
-However, some other portions of the vein [10-20 mm] present close to zero area increase. At these locations, hemodynamic parameters such as maximum (and average) WSS as well as average WSS gradient reach the highest values, underlying risk of platelets activation and thrombus formation. 
+*Patient#:* 31143  
+
+*Parameters of interest:*  
+- Oscillatory shear index  
+- Average wall shear stress (WSS) gradients  
+- Maximum WSS  
+- Average WSS   
+- Cross-sectional area  
+
+*Paramters units:* [] fold changes from baseline
+
+*Time points:* 6 weeks, 6 months
+
+*Description:* The figure shows that along some portions of the vein (30-40 mm) the cross-sectional area increases up to 2.5 fold at six months, suggesting vessel adaptation and remodeling.   
+However, some other portions of the vein (10-20 mm) present near-to-zero area increase. At these locations, hemodynamic parameters such as maximum (and average) WSS as well as average WSS gradient reach the highest values, underlying risk of platelets activation and thrombus formation. 
 
 ***
 
@@ -31,9 +44,9 @@ Patient1_FoldChange_Week6 = cbind(xdim, FoldChange_Week6);
 Patient1_FoldChange_Month6 = cbind(xdim, FoldChange_Month6);
 #--Define plot titles:
 lab.area <- "Area"
-lab.WSSave <- "Average of WSS"
+lab.WSSave <- "Average WSS"
 lab.WSSmax <- "Maximum WSS"
-lab.WSSGave <- "Average of WSS gradient"
+lab.WSSGave <- "Average WSS gradient"
 lab.OSI <- "Oscillatory Shear Index"
 #--Custom strip function:
 my.strip <- function(which.given, which.panel, ...) {
